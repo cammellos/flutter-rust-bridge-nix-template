@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-PROJECT_NAME=test_project
+
+if [ -z "$1" ]; then
+  echo "Usage: $0 <project_name>"
+  exit 1
+fi
+
+PROJECT_NAME="$1"
 
 sed "s/{PROJECT_NAME}/$PROJECT_NAME/"  _assets/Makefile > Makefile
 
