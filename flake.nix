@@ -5,7 +5,6 @@
     android-nixpkgs = {
       url = "github:tadfisher/android-nixpkgs";
     };
-    #nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable"; # or a specific version/branch you prefer
     flake-utils.url = "github:numtide/flake-utils";
   };
 
@@ -39,9 +38,7 @@
           pkg-config
           gtk3.dev
 
-          pcre2.dev
           rustup
-
           rust-analyzer
           rustfmt
         ];
