@@ -11,6 +11,9 @@ jobs:
     - name: "Setup env"
       uses: JRMurr/direnv-nix-action@v4.1.0
 
+    - name: "Check disk space"
+      run: df . -h
+
     - name: generate new project
       run: ./setup.sh run_new_project
       shell: bash
